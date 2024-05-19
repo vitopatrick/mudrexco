@@ -23,9 +23,9 @@ const achivments = [
 
 const Hero = (props: Props) => {
   return (
-    <div className="mt-5">
+    <div className="mt-5 p-4">
       <div className="text-center ">
-        <h3 className="text-2xl lg:text-6xl font-medium">
+        <h3 className="text-4xl lg:text-6xl font-medium">
           Buy, Sell & Hold Crypto
         </h3>
         <div className="space-y-4 my-6">
