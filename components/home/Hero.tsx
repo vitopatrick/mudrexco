@@ -3,42 +3,54 @@ import React from "react";
 
 type Props = {};
 
+const achivments = [
+  {
+    id: 1,
+    text: "$25M+",
+    props: "Assets Under Management",
+  },
+  {
+    id: 2,
+    text: "2M+",
+    props: "Invested Users",
+  },
+  {
+    id: 3,
+    text: "96%",
+    props: "Customer Satisfaction Score",
+  },
+];
+
 const Hero = (props: Props) => {
   return (
-    <div
-      style={{
-        background:
-          "url('https://lirp.cdn-website.com/eacf0b23/dms3rep/multi/opt/BG1-1920w.jpg')",
-      }}
-      className="md:h-[500px] h-[600px] relative "
-    >
-      {/* overlay */}
-      <div className="absolute top-0 w-full py-[4rem]  h-full bg-gradient-to-br from-black to-black/30 right-0 left-0">
-        {/* container */}
-        <section className="w-[90%] mx-auto p-4 space-y-6">
-          <h4 className="md:text-5xl text-4xl text-white  font-headerTwo font-semibold md:w-[40%] w-full">
-            The Ultimate <br /> One-Stop-Shop for Trading
-          </h4>
-          <p className="font-body md:w-[50%] leading-normal font-light text-white">
-            Discover a world of convenience with our comprehensive suite of
-            services, tailored to meet the needs of Crypto/Cryptocurrency
-            brokers.
+    <div className="mt-5">
+      <div className="text-center ">
+        <h3 className="text-2xl lg:text-6xl font-medium">
+          Buy, Sell & Hold Crypto
+        </h3>
+        <div className="space-y-4 my-6">
+          <p className="text-neutral-400">
+            Invest in 350+ Coins and crypto baskets with actionable insights at
+            your fingertips
           </p>
-          <div className="flex gap-4">
-            <Link
-              href="/login"
-              className="font-headerTwo   px-6 py-3   rounded w-fit font-semibold bg-white"
-            >
-              Login
-            </Link>
-            <Link
-              href="/get-started"
-              className="font-headerTwo  px-6 py-3  border border-white  rounded w-fit font-semibold text-white"
-            >
-              Sign Up
-            </Link>
-          </div>
-        </section>
+          <p>We are Financial Intelligence Unit (FIU) registered.</p>
+        </div>
+        <Link
+          href="/get-started"
+          className="inline-block bg-purple-800 text-white px-6 py-3 rounded-lg my-8"
+        >
+          Get Started
+        </Link>
+        <div className="flex items-center justify-center gap-4 flex-col lg:flex-row">
+          {achivments.map((c) => (
+            <div key={c.id} className="space-y-3">
+              <h4 className="text-2xl lg:text-4xl font-medium text-purple-800">
+                {c.text}
+              </h4>
+              <p className="text-neutral-400">{c.props}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

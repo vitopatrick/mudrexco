@@ -1,14 +1,5 @@
-/* google fonts Montserrat alternative and Josefin sans*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap");
-
-/* Tailwind CSS Derivatives for the css to work */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-  .toast {
-    @apply font-body p-3;
-  }
-}

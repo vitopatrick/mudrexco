@@ -1,19 +1,9 @@
 import Link from "next/link";
-import React from "react";
+import { Menu } from "lucide-react";
 
 type Props = {};
 
 const links = [
-  {
-    id: 1,
-    name: "home",
-    path: "/",
-  },
-  {
-    id: 2,
-    name: "Services",
-    path: "/services",
-  },
   {
     id: 3,
     name: "About Us",
@@ -21,42 +11,46 @@ const links = [
   },
   {
     id: 5,
-    name: "Contact",
-    path: "/contact",
+    name: "Prime",
+    path: "/prime",
   },
 ];
 
 const Navbar = (props: Props) => {
   return (
-    <nav className="sticky top-0 bg-white z-50">
-      {/* container */}
-      <div className="flex md:w-[80%] mx-auto py-4 px-2 justify-between items-center">
-        <div className="w-[200px]">
-          <Link href="/">
-            <h4 className="font-headerTwo font-bold text-2xl">Equity Plus</h4>
+    <nav className="sticky top-0 bg-white z-50 p-4 flex justify-between items-center">
+      <Link href="/" className="block">
+        <img
+          src="https://images.mudrex.com/footer/Header_logo_2x.webp"
+          alt="logo"
+          className="w-[50%]"
+        />
+      </Link>
+      {/* links */}
+      <div className="space-x-4 hidden lg:block">
+        {links.map((link) => (
+          <Link href={link.path} key={link.id}>
+            {link.name}
           </Link>
-        </div>
-
-        <div className="space-x-6 hidden md:block">
-          {links.map((link) => (
-            <Link
-              href={link.path}
-              key={link.id}
-              className="font-headerTwo font-semibold hover:underline capitalize"
-            >
-              {link.name}
-            </Link>
-          ))}
-        </div>
-        <div>
-          <Link
-            href="/get-started"
-            className="font-headerTwo font-semibold bg-yellow-400 rounded-md px-6 py-3 w-full block"
-          >
-            Register Today
-          </Link>
-        </div>
+        ))}
       </div>
+      <div className="space-x-4 hidden lg:block">
+        <Link
+          href="/get-started"
+          className="bg-purple-900 px-6 py-3 rounded-lg text-white"
+        >
+          Get Started
+        </Link>
+        <Link
+          href="/login"
+          className="border border-purple-800 rounded-lg px-6 py-3 text-purple-800"
+        >
+          login
+        </Link>
+      </div>
+      <button className="lg:hidden block">
+        <Menu />
+      </button>
     </nav>
   );
 };
