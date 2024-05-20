@@ -5,43 +5,25 @@ type Props = {};
 let services = [
   {
     id: 1,
-    title: "CRM System",
+    title: "100% compliant",
     description:
-      "Streamline your client management with our intuitive and powerful CRM system designed for Cryptocurrency brokers.",
-    image:
-      "https://lirp.cdn-website.com/eacf0b23/dms3rep/multi/opt/0_1+%281%29-1280w.png",
+      "Registered with FIU-India and fully compliant by Indian and European standards",
+    image: "https://images.mudrex.com/fiu_compliance_2/compliance.webp",
   },
   {
     id: 2,
-    title: "WebTrader",
+    title: "Safe and insured funds",
     description:
-      "Offer a seamless trading experience to your clients with our user-friendly and feature-rich WebTrader platform.",
+      "None of your assets or funds are used by Mudrex without your permission",
     image:
-      "https://lirp.cdn-website.com/eacf0b23/dms3rep/multi/opt/0_2-1920w.png",
+      "https://images.mudrex.com/fiu_compliance_2/transfer_compliance.webp",
   },
   {
     id: 3,
-    title: "PBX and VoIP System",
+    title: "1/1 expert support",
     description:
-      "Enhance your communication infrastructure with our cost-effective and scalable PBX and VoIP solutions.",
-    image:
-      "https://lirp.cdn-website.com/eacf0b23/dms3rep/multi/opt/0_1+%282%29-1920w.png",
-  },
-  {
-    id: 4,
-    title: "RDP Services",
-    description:
-      "Protect your business with our secure RDP services, ensuring the safety and integrity of your operations.",
-    image:
-      "https://lirp.cdn-website.com/eacf0b23/dms3rep/multi/opt/0_3-1920w.png",
-  },
-  {
-    id: 5,
-    title: "Leads",
-    description:
-      "Grow your business with our high-quality, industry-specific leads tailored to Cryptocurrency brokers.",
-    image:
-      "https://lirp.cdn-website.com/eacf0b23/dms3rep/multi/opt/0_1+%283%29-1920w.png",
+      "The easiest investment you'll ever make, with expert support just one call away",
+    image: "https://images.mudrex.com/fiu_compliance_2/expert_compliance.webp",
   },
 ];
 
@@ -50,23 +32,19 @@ const OurServices = (props: Props) => {
     <div className="my-[5rem]">
       {/* container */}
       <section className="w-[80%] p-4 mx-auto">
-        <h4 className="w-full md:w-[60%] py-3 font-headerTwo text-3xl font-semibold md:text-4xl">
-          Our Services: Empowering Cryptocurrency Brokers
+        <h4 className="w-full capitalize  py-3 text-3xl font-medium text-center md:text-4xl">
+          We make crypto investing easy for you
         </h4>
-        <p className="font-headerTwo font-semibold">
-          Access everything you need for success, all in one place.
-        </p>
+
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 mt-[2rem]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-[2rem]">
           {services.map((service) => (
             <div key={service.id}>
-              <div>
+              <div className="lg:w-[70%] mx-auto">
                 <img src={service.image} alt="" className="rounded-md" />
               </div>
-              <div>
-                <h4 className="font-headerTwo text-2xl my-2 font-semibold">
-                  {service.title}
-                </h4>
+              <div className="text-center">
+                <h4 className="text-2xl my-2 font-medium">{service.title}</h4>
                 <p className="text-sm font-body">{service.description}</p>
               </div>
             </div>

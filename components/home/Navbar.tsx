@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Menu } from "lucide-react";
+// import { Menu } from "lucide-react";
+import RespronsiveNavbar from "../responive/RespronsiveNavbar";
 
 type Props = {};
 
@@ -48,9 +49,7 @@ const Navbar = (props: Props) => {
           login
         </Link>
       </div>
-      <button className="lg:hidden block">
-        <Menu />
-      </button>
+      <RespronsiveNavbar />
     </nav>
   );
 };
