@@ -13,6 +13,16 @@ const links = [
     name: "Prime",
     path: "/prime",
   },
+  {
+    id: 6,
+    name: "Get Started Today",
+    path: "/get-started",
+  },
+  {
+    id: 7,
+    name: "Log In Account",
+    path: "/login",
+  },
 ];
 
 const RespronsiveNavbar = () => {
