@@ -13,11 +13,6 @@ const links = [
     name: "Prime",
     path: "/prime",
   },
-  {
-    id: 6,
-    name: "Contact",
-    path: "/contact",
-  },
 ];
 
 const RespronsiveNavbar = () => {

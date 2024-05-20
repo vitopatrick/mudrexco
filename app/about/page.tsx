@@ -3,6 +3,7 @@ import OurMission from "@/components/about/our-mission";
 import OurTeam from "@/components/about/our-team";
 import Footer from "@/components/home/Footer";
 import Navbar from "@/components/home/Navbar";
+import WhyUs from "@/components/why-us/WhyUs";
 
 export default function AboutPage() {
   return (
@@ -11,6 +12,8 @@ export default function AboutPage() {
       <Navbar />
       {/* About Agency */}
       <AboutAgency />
+      {/* why us  */}
+      <WhyUs />
       {/* Our Team */}
       <OurTeam />
       {/* Our Mission */}
