@@ -118,7 +118,7 @@ const RegisterForm = () => {
   };
 
   return (
-    <section className="w-full mt-[3rem] md:mt-0">
+    <section className="w-full mt-[3rem] md:mt-0 p-4">
       <form className="space-y-8" onSubmit={handleSubmit(registerUser)}>
         {/* Name */}
         <div className="flex flex-col gap-1">
@@ -202,8 +202,8 @@ const RegisterForm = () => {
           disabled={!isValid}
           className={
             !isValid
-              ? "font-headerTwo font-semibold bg-neutral-500 w-full p-4 text-neutral-300 rounded-md"
-              : "font-headerTwo font-semibold bg-black w-full p-4 text-white rounded-md"
+              ? "font-headerTwo font-semibold bg-purple-500/50 w-full p-4 text-neutral-300 rounded-md"
+              : "font-headerTwo font-semibold bg-purple-900 w-full p-4 text-white rounded-md"
           }
         >
           Register Today

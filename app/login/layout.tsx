@@ -10,9 +10,5 @@ export default function LoginLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body className="w-screen h-screen">{children}</body>
-    </html>
-  );
+  return <>{children}</>;
 }

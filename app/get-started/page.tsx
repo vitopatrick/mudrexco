@@ -8,9 +8,9 @@ export default function GetStarted() {
     // page Wrapper
     <>
       {/* main form wrapper */}
-      <main className="w-[90%] mx-auto md:grid grid-cols-2 place-items-center h-screen ">
-        <div className="hidden md:block">
-          <h4 className="font-headerTwo font-bold text-4xl underline">
+      <main className="mx-auto md:grid grid-cols-2 place-items-center h-screen ">
+        <div className="hidden lg:flex bg-purple-950 text-white h-full w-full  items-center ">
+          <h4 className=" font-medium text-4xl underline ml-4">
             Register now to trade with <br /> confidence
           </h4>
         </div>
