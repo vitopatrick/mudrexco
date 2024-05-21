@@ -158,7 +158,7 @@ const Form = () => {
               Coin
             </label>
             <select
-              className="border border-main bg-main/5 outline-none  text-white rounded-lg p-3 font-body"
+              className="border border-main bg-stone-800 outline-none  text-white rounded-lg p-3 font-body"
               {...register("coin")}
             >
               {switchCoin.map((address: any) => (

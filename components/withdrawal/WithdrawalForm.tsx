@@ -148,8 +148,8 @@ const WithdrawalForm = () => {
               {...register("coin")}
               className={
                 errors.coin?.message
-                  ? "border border-red-500 bg-main/5 rounded-lg text-white p-4 outline-none"
-                  : "border border-main bg-main/5 rounded-lg text-white p-4 outline-none"
+                  ? "border border-red-500 bg-stone-800 rounded-lg text-white p-4 outline-none"
+                  : "border border-main bg-stone-800 rounded-lg text-white p-4 outline-none"
               }
             >
               <option value="Eth">Ethereum</option>
