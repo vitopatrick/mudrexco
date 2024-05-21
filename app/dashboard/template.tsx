@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ChartProvider>
-        <body className="bg-stone-950">
+        <body className="bg-stone-950 font-main">
           {/* parent div container */}
           <section className="flex h-screen w-screen ">
             {/* sidebar */}
