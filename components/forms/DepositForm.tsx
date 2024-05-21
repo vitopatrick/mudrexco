@@ -260,7 +260,7 @@ const BarCodeModal = ({ coin, show, close }: any) => {
         key={show}
         className={
           show
-            ? "absolute top-0 left-0 bottom-0 right-0 bg-bg/20 backdrop-blur-sm"
+            ? "absolute top-0 left-0 bottom-0 right-0 bg-stone-900/20 backdrop-blur-sm"
             : "hidden"
         }
       >

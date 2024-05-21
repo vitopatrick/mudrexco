@@ -38,7 +38,7 @@ export default function TradingModal({ isOpen, toggle }: TradingModal) {
             duration: 0.4,
             ease: "easeInOut",
           }}
-          className="md:w-[30%] w-[80%] mx-auto bg-bg mt-8 rounded-lg md:p-5 p-4"
+          className="md:w-[30%] w-[80%] mx-auto bg-stone-900 mt-8 rounded-lg md:p-5 p-4"
         >
           <div className="flex items-center justify-between">
             <h4 className="font-body text-neutral-300 underline text-2xl">

@@ -7,7 +7,7 @@ import { useFetchAllCoins } from "@/hooks/useFetchAllCoins";
 export default function HotCoins() {
   const { coins, loading } = useFetchAllCoins(4);
   return (
-    <div className="bg-bg rounded font-body text-white flex-1 w-full p-4">
+    <div className="bg-stone-900 rounded font-body text-white flex-1 w-full p-4">
       <div>
         <div>
           <h1 className="underline text-xl">Hot Coins</h1>

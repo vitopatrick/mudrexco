@@ -54,7 +54,7 @@ const DepositTable = ({ transactions, loading }: any) => {
               <div
                 key={transaction.id}
                 onClick={() => openModal(transaction.id)}
-                className="flex items-center justify-between cursor-pointer hover:bg-bg/40 p-2 ease transition-all rounded-xl"
+                className="flex items-center justify-between cursor-pointer hover:bg-stone-900/40 p-2 ease transition-all rounded-xl"
               >
                 <div>
                   <h3 className="font-semibold text-xs uppercase">
@@ -110,11 +110,11 @@ const DepositDetailsModal = ({ id, show, close }: any | unknown) => {
         }}
         className={
           show
-            ? "fixed top-0 left-0 bottom-0 right-0 w-full h-[700px] md:h-full overflow-scroll bg-card/30 backdrop-blur-sm"
+            ? "fixed top-0 left-0 bottom-0 right-0 w-full h-[700px] md:h-full overflow-scroll bg-stone-300/30 backdrop-blur-sm"
             : "hidden"
         }
       >
-        <div className="md:w-[50%] w-[80%] mx-auto md:mt-14 bg-bg p-2 font-body">
+        <div className="md:w-[50%] w-[80%] mx-auto md:mt-14 bg-stone-900 p-2 font-body">
           <div className="flex justify-between items-center">
             <h4 className="font-bold text-base underline">
               Withdrawal Details

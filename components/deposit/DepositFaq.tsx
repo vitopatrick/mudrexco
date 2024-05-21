@@ -95,7 +95,7 @@ const DepositFaq = () => {
                   }}
                   className={
                     active === index
-                      ? "py-3 px-2 bg-bg/40 leading-loose text-neutral-300 text-xs"
+                      ? "py-3 px-2 bg-stone-900/40 leading-loose text-neutral-300 text-xs"
                       : "hidden"
                   }
                 >

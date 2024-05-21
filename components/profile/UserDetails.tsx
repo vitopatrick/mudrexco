@@ -16,7 +16,7 @@ const UsersDetails = () => {
         {/* grid children */}
         {/* grid child one */}
         <div className="my-2 p-4 flex items-center gap-6 bg-sideBar rounded shadow">
-          <div className="bg-card p-3 md:p-5 rounded-full">
+          <div className="bg-stone-300 p-3 md:p-5 rounded-full">
             <TfiEmail color="#4ade80" className="text-base md:text-2xl" />
           </div>
           <div className="space-y-3">
@@ -36,7 +36,7 @@ const UsersDetails = () => {
         {/* grid child 2 */}
         {/* grid child 2 */}
         <div className="my-2 p-4 flex items-center gap-6 bg-sideBar rounded shadow">
-          <div className="bg-card p-3 md:p-5 rounded-full">
+          <div className="bg-stone-300 p-3 md:p-5 rounded-full">
             <MdOutlineVerified className="text-[#dc2626] text-base md:text-2xl" />
           </div>
 
@@ -56,7 +56,7 @@ const UsersDetails = () => {
         </div>
         {/* grid child 3 */}
         <div className="my-2 p-4 font-sec flex items-center gap-6 bg-sideBar rounded shadow">
-          <div className="bg-card p-3 md:p-5 rounded-full">
+          <div className="bg-stone-300 p-3 md:p-5 rounded-full">
             <MdPublishedWithChanges className="text-[#fbbf24] text-base md:text-2xl" />
           </div>
 

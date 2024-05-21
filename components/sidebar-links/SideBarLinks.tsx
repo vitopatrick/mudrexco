@@ -43,7 +43,7 @@ export default function SideBarLinks() {
               <Link
                 href={link.path}
                 key={link.id}
-                className="flex items-center gap-2 p-4 font-body hover:bg-bg  transition-all ease-in rounded-lg"
+                className="flex items-center gap-2 p-4 font-body hover:bg-stone-900  transition-all ease-in rounded-lg"
               >
                 {link.icons}
                 {link.title}
@@ -62,7 +62,7 @@ export default function SideBarLinks() {
               <Link
                 href={link.path}
                 key={link.id}
-                className="flex items-center gap-2 p-4 font-body hover:bg-bg  transition-all ease-in rounded-lg"
+                className="flex items-center gap-2 p-4 font-body hover:bg-stone-900  transition-all ease-in rounded-lg"
               >
                 {link.icons}
                 {link.title}
@@ -75,7 +75,7 @@ export default function SideBarLinks() {
         <div className="p-2 md:mt-[10rem]">
           <button
             onClick={logOut}
-            className="flex items-center gap-1 font-body w-full hover:bg-bg px-2 py-4 rounded-lg"
+            className="flex items-center gap-1 font-body w-full hover:bg-stone-900 px-2 py-4 rounded-lg"
           >
             <MdLogout size={"20px"} /> <span>Sign Out</span>
           </button>
