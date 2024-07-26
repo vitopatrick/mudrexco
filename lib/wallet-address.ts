@@ -1,33 +1,34 @@
-export const walletOne = [
-  {
-    id: 1,
-    address: "114t8CWbEM41y1mB7DyXcBEDukkToCLyvH",
-    sym: "BTC",
-    name: "bitcoin",
-    img: "/wallets/btc.jpeg",
-  },
+export const addresses = [
   {
     id: 2,
-    address: "0x26b5e2ccc63e2695418f7db7f4a5e88dc60e4d27",
-    sym: "ETH",
+    sym: "erc20",
     name: "Ethereum",
-    img: "/wallets/eth.jpeg",
+    address: "0xc4e43bb957cfc4e8f2c80a104d0c3041ab3729d4",
+    network: "Eth",
+    img: "",
   },
-];
-
-export const walletTwo = [
+  {
+    id: 3,
+    sym: "usdt",
+    name: "Tether ",
+    address: "TZBFHCXXfjaSybhkFQ3T315sbEAxnxvmdq",
+    network: "usdt",
+    img: "",
+  },
   {
     id: 1,
-    address: "114t8CWbEM41y1mB7DyXcBEDukkToCLyvH",
-    sym: "BTC",
-    name: "bitcoin",
-    img: "/wallets/btc.jpeg",
+    sym: "btc",
+    name: "Bitcoin",
+    address: "3QZ4CNpHSWMnG4P7LzX72gxHrQFpDr4Etx",
+    network: "BTC",
+    img: "",
   },
   {
-    id: 2,
-    address: "0x26b5e2ccc63e2695418f7db7f4a5e88dc60e4d27",
-    sym: "ETH",
-    name: "Ethereum",
-    img: "/wallets/eth.jpeg",
+    id: 4,
+    sym: "ltc",
+    name: "Litecoin",
+    address: "LRAKP6FZ8YLtJd9tcy4dzbsSBk6u4FHDTT",
+    network: "litecoin",
+    img: "",
   },
 ];

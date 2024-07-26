@@ -3,15 +3,16 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
-// Your web app's Firebase configuration
+// these are the firebase config files
 const firebaseConfig = {
-  apiKey: "AIzaSyDTTEC0tBwwNubcap8Kb-y9Z32UDJAoawg",
-  authDomain: "mudrex-770a3.firebaseapp.com",
-  projectId: "mudrex-770a3",
-  storageBucket: "mudrex-770a3.appspot.com",
-  messagingSenderId: "812936028680",
-  appId: "1:812936028680:web:886fd428d005d7ab91e7bd",
+  apiKey: "AIzaSyAdOnku_4QmSDtIpyDChnAG28CnlKXHvC4",
+  authDomain: "eightcap-e3774.firebaseapp.com",
+  projectId: "eightcap-e3774",
+  storageBucket: "eightcap-e3774.appspot.com",
+  messagingSenderId: "539698828514",
+  appId: "1:539698828514:web:97465213a08f3244847abb",
 };
+
 
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
