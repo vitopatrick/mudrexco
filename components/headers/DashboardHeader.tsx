@@ -27,7 +27,7 @@ export default function DashboardHeader({ toggle }: DashboardHeaderProps) {
             href="/dashboard/account"
             className="font-body uppercase text-white text-xl hover:underline transition-all ease-in-out"
           >
-            {user?.name}
+            {user?.Name}
           </Link>
         </div>
       )}

@@ -8,6 +8,7 @@ const UserNameCard = () => {
     loading,
   }: { userState: any | unknown; loading: boolean } = useFetchUser();
 
+
   return (
     <div className="mt-4 mb-10 px-3 font-body p-4 flex flex-col items-center justify-center">
       {/* parent flex container */}
@@ -17,7 +18,7 @@ const UserNameCard = () => {
         )}
         {!loading && (
           <div className="text-bg flex items-center justify-center w-[60px] uppercase h-[60px] rounded-full bg-neutral-300 text-4xl font-header  font-bold">
-            {user?.name.slice(0, 2)}
+            {user?.Name.slice(0, 2)}
           </div>
         )}
 
@@ -27,7 +28,7 @@ const UserNameCard = () => {
           )}
           {!loading && (
             <h1 className="font-bold text-xl text-white capitalize">
-              {user?.name}
+              {user?.Name}
             </h1>
           )}
           {loading && (

@@ -49,7 +49,6 @@ const VerificationModal = ({ hide, setHide }: any) => {
       const imgRef = ref(bucket, `proofImg/${photoRef.current.files[0].name}`);
       await uploadBytes(imgRef, photoRef.current.files[0]);
     } catch (e: any) {
-      console.log(e);
       toast(e.code, {
         type: "error",
         position: "bottom-center",
