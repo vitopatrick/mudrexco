@@ -20,17 +20,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ChartProvider>
-        <body className="bg-stone-950 font-main">
+        <body className="bg-stone-950 font-main h-screen">
           {/* parent div container */}
-          <section className="flex h-screen w-screen ">
+          <section className="flex bg-stone-950">
             {/* sidebar */}
             <MobileSideBar isOpen={active} toggle={setActive} />
             {/* end of sidebar */}
-            <aside className="w-[300px] hidden md:block bg-sideBar h-screen">
+            <aside className="w-[300px] hidden md:block  ">
               <SideBarLinks />
             </aside>
             <UserProvider>
-              <main className="w-full overflow-auto min-h-0">
+              <main className="w-full overflow-auto min-h-0 bg-stone-950">
                 {/* the header for the pages */}
                 <DashboardHeader toggle={setActive} />
                 {children}

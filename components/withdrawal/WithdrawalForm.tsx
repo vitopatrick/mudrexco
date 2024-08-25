@@ -162,18 +162,18 @@ const WithdrawalForm = () => {
           </div>
           {/* end of coin field */}
           <div className="flex items-center gap-2">
-            {/* <button
+            <button
               onClick={() => setIsOpen(true)}
               className="border flex-1 border-main rounded-lg font-body px-6 py-3 "
             >
-              bank withdrawal
-            </button> */}
+              Bank withdrawal
+            </button>
             <button
               disabled={!isValid}
               className={
                 !isValid
-                  ? "bg-main/5 flex-1 rounded-lg px-6 py-3"
-                  : "bg-main flex-1 rounded-lg px-6 py-3"
+                  ? "bg-blue-600/50 flex-1 rounded-lg px-6 py-3"
+                  : "bg-blue-600 flex-1 rounded-lg px-6 py-3"
               }
             >
               Withdraw

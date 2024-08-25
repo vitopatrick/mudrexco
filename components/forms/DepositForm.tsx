@@ -177,7 +177,7 @@ const Form = () => {
           <div className="flex items-center justify-between flex-wrap gap-2">
             <div className="space-y-2">
               <h3 className="font-body text-neutral-400">Address</h3>
-              <p className="font-body text-neutral-300 text-sm break-all">
+              <p className="text-neutral-300 text-sm break-all font-mono">
                 {defaultCoin?.address && defaultCoin.address}
               </p>
             </div>
@@ -220,8 +220,8 @@ const Form = () => {
             type="submit"
             className={
               !isValid
-                ? "bg-main/20 text-white/20  font-body font-semibold shadow rounded px-4 py-2"
-                : "bg-main text-white  font-body font-semibold shadow rounded px-4 py-2"
+                ? "bg-blue-600/50 text-white/20  font-body font-semibold shadow rounded px-4 py-2"
+                : "bg-blue-600 text-white  font-body font-semibold shadow rounded px-4 py-2"
             }
           >
             Deposit

@@ -18,7 +18,7 @@ const UserNameCard = () => {
         )}
         {!loading && (
           <div className="text-bg flex items-center justify-center w-[60px] uppercase h-[60px] rounded-full bg-neutral-300 text-4xl font-header  font-bold">
-            {user?.Name.slice(0, 2)}
+            {user?.name.slice(0, 2)}
           </div>
         )}
 
@@ -28,7 +28,7 @@ const UserNameCard = () => {
           )}
           {!loading && (
             <h1 className="font-bold text-xl text-white capitalize">
-              {user?.Name}
+              {user?.name}
             </h1>
           )}
           {loading && (
